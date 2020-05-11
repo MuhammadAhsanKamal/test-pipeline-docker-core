@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: muhammadahsankamaltestpipelinedockercore 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: muhammadahsankamaltestpipelinedockercore 
+    spec:
+      containers:
+        - name: muhammadahsankamaltestpipelinedockercore 
+          image: testkubernetesregistry.azurecr.io/muhammadahsankamaltestpipelinedockercore
+          ports:
+          - containerPort: 80
